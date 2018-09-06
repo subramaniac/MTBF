@@ -100,6 +100,7 @@ namespace MTBF2
                 }
             }
             customerlist = customerlist.OrderBy(o => o.getAverage()).ToList();
+            MessageBox.Show("Hello");
 
             var writer = new StreamWriter("customers.csv");
             writer.WriteLine("Customer Name,Average,Number Of Units");
